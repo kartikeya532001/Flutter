@@ -1,13 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
 
 myapp() {
+  FlutterStatusbarcolor.setStatusBarColor(Colors.black);
   var x = Text(
     "Happiest Soul",
     textDirection: TextDirection.ltr,
     textAlign: TextAlign.center,
   );
   press() {
-    var y = Text("Enter your email");
+    var y = Fluttertoast.showToast(
+        msg: "Please enter your Email.",
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.BOTTOM,
+        timeInSecForIosWeb: 5,
+        backgroundColor: Colors.black,
+        textColor: Colors.white,
+        fontSize: 16.0);
     print("hi");
     return y;
   }
@@ -22,7 +32,7 @@ myapp() {
 
   var MyAppBar = AppBar(
       title: x,
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.blueGrey,
       leading: Logo,
       actions: <Widget>[
         MyIconButton,
@@ -47,10 +57,11 @@ myapp() {
         ],
       ),
       decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10.0),
           border: Border.all(
-        width: 5,
-        color: Colors.blueGrey,
-      )),
+            width: 5,
+            color: Colors.white,
+          )),
     );
 
     return BodyLayout;
@@ -68,3 +79,5 @@ myapp() {
 
   return Design;
 }
+
+
