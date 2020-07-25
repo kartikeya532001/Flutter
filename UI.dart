@@ -23,7 +23,7 @@ myapp() {
   }
 
   var url =
-      "https://raw.githubusercontent.com/kartikeya532001/Flutter/master/Happiest%20soul%20logo.jpeg";
+    'https://raw.githubusercontent.com/kartikeya532001/Flutter/master/Happiest%20soul%20logo.jpeg';
   var Logo = Image.network(url);
 
   var MyEmailIcon = Icon(Icons.email);
