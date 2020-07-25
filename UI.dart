@@ -4,11 +4,14 @@ import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
 
 myapp() {
   FlutterStatusbarcolor.setStatusBarColor(Colors.black);
-  var x = Text(
-    "Happiest Soul",
-    textDirection: TextDirection.ltr,
-    textAlign: TextAlign.center,
-  );
+  var x = Text("Happiest Soul",
+      textDirection: TextDirection.ltr,
+      textAlign: TextAlign.center,
+      style: TextStyle(
+          color: Colors.black,
+          fontWeight: FontWeight.bold,
+          fontStyle: FontStyle.normal,
+          fontSize: 25));
   press() {
     var y = Fluttertoast.showToast(
         msg: "Please enter your Email.",
@@ -23,7 +26,7 @@ myapp() {
   }
 
   var url =
-    'https://raw.githubusercontent.com/kartikeya532001/Flutter/master/Happiest%20soul%20logo.jpeg';
+      'https://raw.githubusercontent.com/kartikeya532001/Flutter/master/Happiest%20soul%20logo.jpeg';
   var Logo = Image.network(url);
 
   var MyEmailIcon = Icon(Icons.email);
@@ -31,8 +34,8 @@ myapp() {
   var MyIconButton = IconButton(icon: MyEmailIcon, onPressed: press);
 
   var MyAppBar = AppBar(
-      title: x,
       backgroundColor: Colors.blueGrey,
+      title: x,
       leading: Logo,
       actions: <Widget>[
         MyIconButton,
