@@ -1,24 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
-//import 'package:fluttertoast/fluttertoast.dart';
 
 press() {
   FlutterStatusbarcolor.setStatusBarColor(Colors.grey);
 
   myprint() {
-    print('Vimal Daga  !! ');
+    print('Kartikeya khanna  !! ');
   }
 
-  /*myt() {
-    Fluttertoast.showToast(
-        msg: "This is Vimal !!",
-        toastLength: Toast.LENGTH_SHORT,
-        gravity: ToastGravity.BOTTOM,
-        timeInSecForIosWeb: 1,
-        backgroundColor: Colors.amber,
-        textColor: Colors.white,
-        fontSize: 16.0);
-  }*/
   var url =
       'https://raw.githubusercontent.com/kartikeya532001/Flutter/master/Happiest%20soul%20logo.jpeg';
 
@@ -43,12 +32,9 @@ press() {
             ),
           ),
           margin: EdgeInsets.all(50),
-          //padding: EdgeInsets.all(100),
-          //padding: EdgeInsets.only(left: 70),
           alignment: Alignment.center,
           width: 350,
           height: 200,
-          // color: Colors.amber,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
@@ -76,7 +62,6 @@ press() {
         ),
         GestureDetector(
           onTap: myprint,
-          //onDoubleTap: myprint,
           child: Container(
             decoration: BoxDecoration(
               image: DecorationImage(
@@ -91,11 +76,8 @@ press() {
                 width: 3,
               ),
             ),
-            // margin: EdgeInsets.all(20),
             width: 100,
             height: 100,
-            // color: Colors.blue,
-            // child: Text('second'),
           ),
         ),
       ],
@@ -117,7 +99,6 @@ press() {
                 fontSize: 25)),
         leading: Logo,
         actions: <Widget>[
-          // IconButton(icon: Icon(Icons.add_a_photo), onPressed: myt),
           IconButton(icon: Icon(Icons.account_circle), onPressed: null)
         ],
       ),
