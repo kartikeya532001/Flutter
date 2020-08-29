@@ -11,6 +11,7 @@ void main() {
       "/": (context) => Mylogin(),
       "/home": (context) => MyHome(),
       "/profile": (context) => MyProfile(),
+      "/signup": (context) => Signup()
     },
   ));
 }
