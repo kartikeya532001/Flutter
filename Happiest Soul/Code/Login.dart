@@ -89,7 +89,7 @@ class _MyloginState extends State<Mylogin> {
                                 fontWeight: FontWeight.bold,
                               )),
                           RaisedButton(
-                            onPressed: () => print("yes"),
+                            onPressed: () => Navigator.pushNamed(context, "/signup"),
                             child: Text("Sign up."),
                           )
                         ],
